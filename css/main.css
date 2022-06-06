@@ -473,13 +473,12 @@ address .item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer__address {
-  color: var(--primary-color);
+.footer__link {
+  color: var(--mail-link-color);
 }
 
-.footer__mail,
-.footer__tel {
-  color: var(--mail-link-color);
+.footer__link:hover, .footer__link:focus {
+  color: var(--primary-color);
 }
 
 .footer__text {
@@ -540,6 +539,18 @@ address .item:not(:last-child) {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: var(--mail-link-color);
+}
+
+.footer-form__mail ~ .main-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .potfolio-section {
